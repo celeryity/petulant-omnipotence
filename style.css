@@ -1,0 +1,206 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+p {
+	font-family: proggy;
+}
+
+#container {
+	min-height: 100%;
+	margin: 0px auto -60px 0px;;
+}
+
+#header {
+	background-color: #ddbb44;
+	height: 60px;
+}
+
+#footer {
+	background-color: #4466dd;
+	height: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#letter-container {
+	width: 700px;
+	height: 100px;
+	margin: auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	font-size: 0px;
+}
+
+.letter {
+	display: inline-block;
+	width: 100px;
+	line-height: 90px;
+	text-align: center;
+	cursor: default;
+	text-align: center;
+	font-size: 50px;
+}
+
+.letter:not(:first-child) {
+	margin-left: 20px;
+}
+
+.letter-add {
+	background-color: #dddddd;
+	border: 5px solid #cccccc;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.letter-edit {
+	background-color: #44ee44;
+	border: 5px solid #22dd22;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.letter-normal {
+	background-color: #ddbb66;
+	border: 5px solid #ccaa55;
+	border-radius: 10px;
+}
+
+.letter-unknown {
+	background-color: #dddddd;
+	border: 5px solid #cccccc;
+	border-radius: 10px;
+}
+
+.letter textarea {
+	width: 0px;
+	height: 0px;
+	border: none;
+	overflow: auto;
+}
+
+#go-button {
+	width: 300px;
+	height: 40px;
+	margin: auto;
+	line-height: 30px;
+	text-align: center;
+	background-color: #44ee44;
+	border: 5px solid #22dd22;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 30px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+#go-button:hover {
+	background-color: #ff00ff;
+	-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon1 1.5s ease-in-out infinite alternate;
+	animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+@font-face {
+    font-family: proggy;
+    src: url(ProggyClean.ttf);
+}
+
+.no-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+@-webkit-keyframes neon1 {
+	from {
+		background-color:
+			#fff,
+			#fff,
+			#fff,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177;
+	}
+	to {
+		background-color:
+			#fff,
+			#fff,
+			#fff,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177;
+  }
+}
+
+@-moz-keyframes neon1 {
+	from {
+		background-color:
+			#fff,
+			#fff,
+			#fff,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177;
+	}
+	to {
+		background-color:
+			#fff,
+			#fff,
+			#fff,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177;
+  }
+}
+
+@keyframes neon1 {
+	from {
+		background-color:
+			#fff,
+			#fff,
+			#fff,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177;
+	}
+	to {
+		background-color:
+			#fff,
+			#fff,
+			#fff,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177,
+			#FF1177;
+  }
+}
